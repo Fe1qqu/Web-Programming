@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>2</title>
+
+    <style type="text/css">
+        .inv {
+            background: black;
+            color: red;
+            font-weight: bold;
+            font-family: arial 
+        }
+
+        .yellow-green {
+            background: yellow;
+            color: green;
+            font-weight: bold;
+        }
+
+        .blue-bg-first-red {
+            background: blue;
+            color: white;
+            display: inline-block;
+        }
+
+        .blue-bg-first-red:first-letter {
+            color: red;
+        }
+
+        .black-bg {
+            background: black;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p>
+        <span class="inv">Этот текст написан красным по черному</span>
+    </p>
+
+    <p>
+        <span class="yellow-green">Этот текст написан зеленым жирным по желтому</span>
+    </p>
+
+    <p>
+        <span class="blue-bg-first-red">Нормальный текст, с красной начальной буквой, на синем фоне</span>
+    </p>
+    
+    <p style="font-family: Arial">
+        <span class="black-bg">Этот </span>
+        <span class="yellow-green">текст </span>
+        <span class="black-bg">написан </span>
+        <span class="yellow-green">arial </span>
+        <span class="black-bg">шрифтом</span>
+    </p>
+
+</body>
+</html>

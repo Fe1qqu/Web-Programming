@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	background:transparent;
+}
+
+
+/* base */
+
+body {
+	font-family: Arial, sans-serif;
+	background:#f2f2f2;
+	line-height:1.6;
+}
+
+.wrapper {
+	max-width:1200px;
+	margin:auto;
+	background:white;
+}
+
+header {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:20px;
+	background:#999999;
+}
+
+.logo img {
+	width:70px;
+}
+
+nav ul {
+	list-style:none;
+	display:flex;
+}
+
+nav li {
+	margin-left:20px;
+}
+
+nav a {
+	text-decoration:none;
+	color:#333;
+	font-weight:bold;
+}
+
+
+/* WELCOME */
+
+.welcome {
+	text-align:center;
+	padding:40px;
+}
+
+.features {
+	display:flex;
+	justify-content:space-around;
+	margin-top:30px;
+}
+
+.feature {
+	width:200px;
+	text-align:center;
+}
+
+.feature img {
+	width:100px;
+	margin-bottom:10px;
+}
+
+
+/* ARTICLE */
+
+.article {
+	padding:40px;
+}
+
+.article h2 {
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.article-content {
+	display:flex;
+	gap:30px;
+	align-items:flex-start;
+}
+
+.article img {
+	width:400px;
+}
+
+.text {
+	max-width:500px;
+}
+
+.text ul {
+	margin-top:10px;
+	margin-left:20px;
+}
+
+
+/* CONTACT */
+
+.contact {
+	padding:40px;
+}
+
+form {
+	max-width:400px;
+	display:flex;
+	flex-direction:column;
+}
+
+input, textarea {
+	margin-bottom:10px;
+	padding:10px;
+	border:1px solid #ccc;
+}
+
+button {
+	padding:10px;
+	background:#333;
+	color:white;
+	border:none;
+	cursor:pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+	background:#333;
+	color:white;
+	text-align:center;
+	padding:20px;
+	margin-top:40px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:980px) {
+
+	.features {
+		flex-wrap:wrap;
+	}
+
+	.feature {
+		width:45%;
+		margin-bottom:20px;
+	}
+
+	.article-content {
+		flex-direction:column;
+		align-items:center;
+		text-align:center;
+	}
+
+	.article img {
+		width:100%;
+	}
+
+}
+
+@media screen and (max-width:640px) {
+
+	.features {
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.feature {
+		width:90%;
+	}
+
+	nav ul {
+		flex-direction:column;
+	}
+
+	nav li {
+		margin:10px 0;
+	}
+
+}

@@ -1,0 +1,126 @@
+:root {
+    --color-primary: #0439D9;
+    --color-dark: #011140;
+    --color-accent: #5086F2;
+    --color-muted: #758EBF;
+    --color-light: #F2F2F2;
+
+    --text-dark: #1a1a1a;
+    --text-muted: #5f6b7a;
+    --text-light: #ffffff;
+
+    --margin-1: 5px;
+    --margin-2: 10px;
+    --margin-3: 20px;
+    --margin-4: 40px;
+
+    --padding-1: 5px;
+    --padding-2: 10px;
+    --padding-3: 20px;
+    --padding-4: 30px;
+
+    --radius: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--color-light);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1000px;
+    margin: var(--margin-4) auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--margin-4);
+}
+
+.card {
+    background: white;
+    padding: var(--padding-4);
+    border-radius: var(--radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    margin-top: var(--margin-2);
+    margin-bottom: var(--margin-3);
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.card p {
+    color: var(--text-muted);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.icon {
+    font-size: 32px;
+    color: var(--color-accent);
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-list li {
+    padding: var(--padding-2) 0;
+    /* border-bottom: 1px solid var(--color-light); */
+    color: var(--text-muted);
+}
+
+/* .card-list li:last-child {
+    border-bottom: none;
+} */
+
+.card-list.two-columns {
+    column-count: 2;
+    column-gap: var(--margin-3);
+}
+
+.text-two-columns {
+    column-count: 2;
+    column-gap: var(--margin-4);
+}
+
+.text-two-columns p {
+    text-indent: 1.25cm;
+    margin: 0 0 0 0;
+}
+
+.card.dark {
+    background: var(--color-dark);
+    color: var(--text-light);
+}
+
+.card.dark h2 {
+    color: var(--text-light);
+}
+
+.card.dark p {
+    color: var(--color-light);
+}
+
+.card.accent {
+    background: var(--color-primary);
+    color: var(--text-light);
+}
+
+.card.accent h2 {
+    color: var(--text-light);
+}
+
+.card.accent p {
+    color: var(--color-light);
+}
